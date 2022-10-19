@@ -70,8 +70,7 @@ Represent C with L0, R0, K0, K1, K2, and K3.
 
 **A)**
 
-|
- | **Left** | **Right** |
+| **Round** | **Left** | **Right** |
 | --- | --- | --- |
 | **Round 0** | L0 | R0 |
 | **Round 1** | R0 | L0 |
@@ -83,8 +82,7 @@ Cipher=(L0, R0)
 
 **B)**
 
-|
- | **Left** | **Right** |
+| **Round** | **Left** | **Right** |
 | --- | --- | --- |
 | **Round 0** | L0 | R0 |
 | **Round 1** | R0 | L0⊕R0 |
@@ -96,8 +94,7 @@ Cipher=(R0, L0⊕R0)
 
 **C)**
 
-|
- | **Left** | **Right** |
+| **Round** | **Left** | **Right** |
 | --- | --- | --- |
 | **Round 0** | L0 | R0 |
 | **Round 1** | R0 | L0⊕K0 |
@@ -109,8 +106,7 @@ Cipher=(K2⊕(L0⊕K0), K3⊕(R0⊕K1))
 
 **D)**
 
-|
- | **Left** | **Right** |
+| **Round** | **Left** | **Right** |
 | --- | --- | --- |
 | **Round 0** | L0 | R0 |
 | **Round 1** | R0 | L0⊕(R0⊕K0) |
@@ -120,11 +116,14 @@ Cipher=(K2⊕(L0⊕K0), K3⊕(R0⊕K1))
 
 The answer above consists of R1,R2,R3. The actual answer is:
 
-**Left:**
+**Left:** (𝐿0⊕(𝑅0⊕𝐾0))⊕((𝑅0⊕((𝐿0⊕(𝑅0⊕𝐾0))⊕𝐾1))⊕𝐾2)
 
-**Right:**
+**Right:** (𝑅0⊕(( 𝐿0⊕(𝑅0⊕𝐾0))⊕𝐾1))⊕(((𝐿0⊕(𝑅0⊕𝐾0))⊕((𝑅0⊕((𝐿0⊕(𝑅0⊕𝐾0))
+⊕𝐾1))⊕𝐾2))⊕𝐾3)
 
-Cipher=
+Cipher= ((𝐿0⊕(𝑅0⊕𝐾0))⊕((𝑅0⊕((𝐿0⊕(𝑅0⊕𝐾0))⊕𝐾1))⊕𝐾2),(𝑅0⊕
+(( 𝐿0⊕(𝑅0⊕𝐾0))⊕𝐾1))⊕(((𝐿0⊕(𝑅0⊕𝐾0))⊕((𝑅0⊕((𝐿0⊕(𝑅0⊕𝐾0))⊕
+𝐾1))⊕𝐾2))⊕𝐾3)) 
 
 ## Exercise 6
 
@@ -217,5 +216,3 @@ The only bad thing is that if a value would be hashed it will give a unique valu
 **Encryption ** is the process of transforming a piece of plain text information into a non-readable message using some sort of encryption key. For someone to either encrypt or decrypt a message the user needs to know what the encryption algorithm is and the key to decrypt it. There are different types of encryption protocols for example public key system (RSA) or DES. All these systems use different methods for how keys are exchanged between the sender and receiver of the information.
 
 Meaning that the **biggest difference** between them is that hashing is a one-way functionto hide information while encryption is a two-way meaning that the encrypteddata can be decrypted again. Generally speaking, hashing is more secure thanencryption due to it being a one-way function where it is impossible to"decrypt" a hashed value. Hashing is also important because it provides a fixed-length hash value which makes it perfect for storing values in a database for example passwords where encrypting passwords would not.
-
-8
