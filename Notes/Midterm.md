@@ -1,32 +1,3 @@
-Casper Kristiansson 2022-10-18
-
-# Principles of Cybersecurity Midterm
-
-# Contents
-
-[TODO 1](#_Toc117344983)
-
-[Security Mindset (cont.') | Classic Crypto 2](#_Toc117344984)
-
-[Cryptography 2](#_Toc117344985)
-
-[Symmetric Key Crypto 3](#_Toc117344986)
-
-[Overview of Linear Cryptanalysis 4](#_Toc117344987)
-
-[Public Key Crypto 5](#_Toc117344988)
-
-[Reverse Engineering 7](#_Toc117344989)
-
-[Malware 9](#_Toc117344990)
-
-[Software Exploitation: Buffer Overflow 11](#_Toc117344991)
-
-[Software Protection: Obfuscation 12](#_Toc117344992)
-
-[Software Security Analysis: Dynamic Vulnerability Detection 13](#_Toc117344993)
-
-[Other 15](#_Toc117344994)
 
 # Security Mindset (cont.') | Classic Crypto
 
