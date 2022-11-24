@@ -1,0 +1,7 @@
+Hints:
+
+1. The length of flag is 26.
+
+2. Try to solve this problem automatically.
+
+3. Have you ever heard of Intel Pin? https://software.intel.com/sites/landingpage/pintool/docs/98484/Pin/html/index.html#SimpleCount
