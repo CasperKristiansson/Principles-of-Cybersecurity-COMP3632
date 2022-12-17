@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <sys/wait.h>
+// #include <sys/wait.h>
 
 void getflag(void) {
     char flag[100];
@@ -52,7 +52,7 @@ int main(void) {
             puts("recv sucess");
             return 0;
         }
-        waitpid(pid, status, WUNTRACED);
+        // waitpid(pid, status, WUNTRACED);
     }
 }
 
